@@ -178,112 +178,118 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* --- SECTION PROJETS --- */}
-      <section id="projets" className="max-w-6xl mx-auto py-8 md:py-12 px-6 z-10 relative">
-        <h2 className="text-4xl md:text-6xl font-black mb-12 tracking-tight text-center md:text-left uppercase">
-          Projets & <span className="text-emerald-500">Experience</span>
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* --- SECTION PROJETS --- */}
+        <section id="projets" className="max-w-6xl mx-auto py-8 md:py-12 px-6 z-10 relative">
+          <h2 className="text-4xl md:text-6xl font-black mb-12 tracking-tight text-center md:text-left uppercase">
+            Projets & <span className="text-emerald-500">Experience</span>
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* --- STAGE ONG TSINJO AINA --- */}
             <div className="md:col-span-3 group relative p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] bg-gradient-to-br from-emerald-500/10 via-transparent to-transparent border border-emerald-500/20 hover:border-emerald-500/50 transition-all shadow-2xl">
               
-              {/* Lohateny sy Badge: Responsive Layout */}
+              {/* Lohateny sy Badge: Nahitsy ho flex-col amin'ny mobile */}
               <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6 mb-10">
                 <div className="flex items-center gap-4 md:gap-6">
                   <div className="p-3 md:p-4 bg-emerald-500/20 rounded-2xl text-emerald-400 shrink-0">
                     <Target size={30} className="md:w-9 md:h-9" />
                   </div>
-                  <h3 className="text-xl md:text-4xl font-black tracking-tighter text-white leading-tight">
-                    ONG TSINJO AINA Fianarantsoa
-                  </h3>
+                  {/* Ny h3 dia natao flex-col amin'ny mobile mba hidiran'ny span eo ambaniny */}
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-xl md:text-4xl font-black tracking-tighter text-white leading-tight">
+                      ONG TSINJO AINA Fianarantsoa
+                    </h3>
+                    {/* Ity span ity dia miseho eo ambany ihany amin'ny mobile */}
+                    <div className="md:hidden">
+                      <span className="text-[10px] font-mono bg-sky-500/20 text-sky-400 px-3 py-1.5 rounded-full uppercase tracking-widest whitespace-nowrap">
+                        Stage Professionnel L2
+                      </span>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Ity span ity izao dia hidina ho azy eo ambany amin'ny mobile fa tsy hivoaka sisiny */}
-                <div className="flex">
-                  <span className="text-[10px] md:text-[11px] font-mono bg-sky-500/20 text-sky-400 px-3 py-1.5 md:px-4 md:py-2 rounded-full uppercase tracking-widest whitespace-nowrap">
+                {/* Ity kosa no miseho eo akaikiny (right side) rehefa amin'ny solosaina (md) */}
+                <div className="hidden md:flex">
+                  <span className="text-[11px] font-mono bg-sky-500/20 text-sky-400 px-4 py-2 rounded-full uppercase tracking-widest whitespace-nowrap">
                     Stage Professionnel L2
                   </span>
                 </div>
               </div>
-              </div>
 
-    
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-        Conception et réalisation d'une application web pour la gestion d'évaluation des données de l'ONG à Fianarantsoa. 
-        Architecture moderne séparant le <span className="text-white">Frontend (React)</span> et le <span className="text-white">Backend (Laravel)</span>.
-      </p>
-      <div className="flex flex-col gap-6 md:items-end justify-end">
-        <div className="flex flex-wrap gap-3">
-          <span className="px-4 py-1.5 bg-zinc-900/80 text-emerald-400 text-[10px] md:text-[11px] font-black rounded-xl border border-emerald-500/30 uppercase">React JS</span>
-          <span className="px-4 py-1.5 bg-zinc-900/80 text-orange-400 text-[10px] md:text-[11px] font-black rounded-xl border border-orange-500/30 uppercase">Laravel</span>
-          <span className="px-4 py-1.5 bg-zinc-900/80 text-sky-400 text-[10px] md:text-[11px] font-black rounded-xl border border-sky-500/30 uppercase">PostgreSQL</span>
-        </div>
-        <p className="text-[10px] md:text-[11px] text-zinc-500 italic font-medium tracking-tight">
-          Encadré par Mr. Andoniaina Andrianjatovo.
-        </p>
-      </div>
-    </div>
-
-
-          {/* DevHunt */}
-          <div className="md:col-span-2 group relative p-10 rounded-[3rem] bg-zinc-900/40 border border-white/5 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
-            <div>
-              <div className="flex items-center justify-between mb-8">
-                <div className="flex items-center gap-5">
-                  <div className="p-3 bg-yellow-500/10 rounded-2xl text-yellow-500">
-                    <Trophy size={32} />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+                  Conception et réalisation d'une application web pour la gestion d'évaluation des données de l'ONG à Fianarantsoa. 
+                  Architecture moderne séparant le <span className="text-white">Frontend (React)</span> et le <span className="text-white">Backend (Laravel)</span>.
+                </p>
+                <div className="flex flex-col gap-6 md:items-end justify-end">
+                  <div className="flex flex-wrap gap-3">
+                    <span className="px-4 py-1.5 bg-zinc-900/80 text-emerald-400 text-[10px] md:text-[11px] font-black rounded-xl border border-emerald-500/30 uppercase">React JS</span>
+                    <span className="px-4 py-1.5 bg-zinc-900/80 text-orange-400 text-[10px] md:text-[11px] font-black rounded-xl border border-orange-500/30 uppercase">Laravel</span>
+                    <span className="px-4 py-1.5 bg-zinc-900/80 text-sky-400 text-[10px] md:text-[11px] font-black rounded-xl border border-sky-500/30 uppercase">PostgreSQL</span>
                   </div>
-                  <h3 className="text-2xl font-bold uppercase tracking-tight text-white">DevHunt 2025</h3>
+                  <p className="text-[10px] md:text-[11px] text-zinc-500 italic font-medium tracking-tight">
+                    Encadré par Mr. Andoniaina Andrianjatovo.
+                  </p>
                 </div>
-                <span className="text-[10px] font-mono bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full uppercase">Concours</span>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed mb-8">Participation au concours national de développement d'application web à l'ENI. Travail intense en équipe sous pression.</p>
             </div>
-            <div className="flex gap-2">
-              <span className="text-[10px] text-zinc-400 bg-white/5 px-4 py-2 rounded-xl border border-white/5 font-mono">Next.js</span>
-              <span className="text-[10px] text-zinc-400 bg-white/5 px-4 py-2 rounded-xl border border-white/5 font-mono">Tailwind</span>
-            </div>
-          </div>
 
-          {/* Gestion de Vente */}
-          <div className="group p-10 rounded-[3rem] bg-zinc-900/40 border border-white/5 hover:border-sky-500/50 transition-all flex flex-col justify-between">
-            <div className="space-y-6">
+            {/* DevHunt */}
+            <div className="md:col-span-2 group relative p-10 rounded-[3rem] bg-zinc-900/40 border border-white/5 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between mb-8">
+                  <div className="flex items-center gap-5">
+                    <div className="p-3 bg-yellow-500/10 rounded-2xl text-yellow-500">
+                      <Trophy size={32} />
+                    </div>
+                    <h3 className="text-2xl font-bold uppercase tracking-tight text-white">DevHunt 2025</h3>
+                  </div>
+                  <span className="text-[10px] font-mono bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full uppercase">Concours</span>
+                </div>
+                <p className="text-gray-400 text-sm leading-relaxed mb-8">Participation au concours national de développement d'application web à l'ENI. Travail intense en équipe sous pression.</p>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-[10px] text-zinc-400 bg-white/5 px-4 py-2 rounded-xl border border-white/5 font-mono">Next.js</span>
+                <span className="text-[10px] text-zinc-400 bg-white/5 px-4 py-2 rounded-xl border border-white/5 font-mono">Tailwind</span>
+              </div>
+            </div>
+
+            {/* Gestion de Vente */}
+            <div className="group p-10 rounded-[3rem] bg-zinc-900/40 border border-white/5 hover:border-sky-500/50 transition-all flex flex-col justify-between">
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-sky-500/10 rounded-2xl text-sky-400">
+                    <Layout size={28}/>
+                  </div>
+                  <h3 className="text-xl font-bold text-white">Gestion de Vente</h3>
+                </div>
+                <p className="text-gray-400 text-sm leading-relaxed mb-8">Développé avec React/JS for une interface fluide et réactive.</p>
+              </div>
+            </div>
+
+            {/* JIRAMA */}
+            <div className="p-10 rounded-[3rem] bg-zinc-900/40 border border-white/5 hover:border-emerald-500/50 transition-all flex flex-col gap-6">
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-emerald-500/10 rounded-2xl text-emerald-400">
+                  <Code2 size={28}/>
+                </div>
+                <h3 className="text-xl font-bold text-white leading-tight">Paiement JIRAMA</h3>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-8">Architecture Backend PHP/MySQL optimisée pour la gestion et le suivi de facturation.</p>
+            </div>
+
+            {/* Parc Automobile */}
+            <div className="p-10 rounded-[3rem] bg-zinc-900/40 border border-white/5 hover:border-sky-500/50 transition-all flex flex-col gap-6">
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-sky-500/10 rounded-2xl text-sky-400">
-                  <Layout size={28}/>
+                  <Database size={28}/>
                 </div>
-                <h3 className="text-xl font-bold text-white">Gestion de Vente</h3>
+                <h3 className="text-xl font-bold text-white leading-tight">Parc Automobile</h3>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed mb-8">Développé avec React/JS pour une interface fluide et réactive.</p>
+              <p className="text-gray-400 text-sm leading-relaxed mb-8">Application de gestion de parc automobile sous Java et PostgreSQL.</p>
             </div>
-
           </div>
-
-          {/* JIRAMA */}
-          <div className="p-10 rounded-[3rem] bg-zinc-900/40 border border-white/5 hover:border-emerald-500/50 transition-all flex flex-col gap-6">
-            <div className="flex items-center gap-4">
-              <div className="p-3 bg-emerald-500/10 rounded-2xl text-emerald-400">
-                <Code2 size={28}/>
-              </div>
-              <h3 className="text-xl font-bold text-white leading-tight">Paiement JIRAMA</h3>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-8">Architecture Backend PHP/MySQL optimisée pour la gestion et le suivi de facturation.</p>
-          </div>
-
-          {/* Parc Automobile */}
-          <div className="p-10 rounded-[3rem] bg-zinc-900/40 border border-white/5 hover:border-sky-500/50 transition-all flex flex-col gap-6">
-            <div className="flex items-center gap-4">
-              <div className="p-3 bg-sky-500/10 rounded-2xl text-sky-400">
-                <Database size={28}/>
-              </div>
-              <h3 className="text-xl font-bold text-white leading-tight">Parc Automobile</h3>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-8">Application de gestion de parc automobile sous Java et PostgreSQL.</p>
-          </div>
-        </div>
-      </section>
+        </section>
 
       {/* --- SECTION BUT --- */}
       <section id="but" className="max-w-6xl mx-auto pt-4 pb-12 px-6 z-10 relative">
