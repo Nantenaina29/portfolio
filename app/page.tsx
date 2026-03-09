@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { 
-  Mail, Phone, MapPin, Code2, 
+  Mail, Phone, MapPin, Code2,Facebook, Linkedin, 
   Database, Layout, Trophy, GraduationCap, 
   ChevronRight, Target, Cpu, Users, Clock, 
   Globe
@@ -348,6 +348,40 @@ export default function Portfolio() {
             <span className="text-xs text-zinc-500 uppercase mb-2">Téléphone</span>
             <p className="font-bold text-sm">+261 38 44 218 15</p>
           </div>
+
+          <div className="flex flex-col items-center p-8 bg-zinc-900/30 rounded-3xl border border-white/5 hover:border-blue-600/50 hover:bg-blue-600/5 transition-all group">
+            <div className="p-4 bg-blue-600/10 rounded-2xl text-blue-600 mb-4 group-hover:scale-110 transition-transform">
+              <Facebook size={32} />
+            </div>
+            <span className="text-[10px] text-zinc-500 uppercase font-mono tracking-widest mb-2">Social Media</span>
+            <h3 className="font-bold text-white mb-4">Facebook</h3>
+            <a 
+              href="https://facebook.com/nantenaina.elyse" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-6 py-2 bg-blue-600/20 hover:bg-blue-600 text-blue-400 hover:text-white text-xs font-bold rounded-xl border border-blue-600/30 transition-all"
+            >
+              Voir le profil
+            </a>
+          </div>
+
+                  {/* --- DIV LINKEDIN --- */}
+          <div className="flex flex-col items-center p-8 bg-zinc-900/30 rounded-3xl border border-white/5 hover:border-sky-500/50 hover:bg-sky-500/5 transition-all group">
+            <div className="p-4 bg-sky-500/10 rounded-2xl text-sky-500 mb-4 group-hover:scale-110 transition-transform">
+              <Linkedin size={32} />
+            </div>
+            <span className="text-[10px] text-zinc-500 uppercase font-mono tracking-widest mb-2">Professional</span>
+            <h3 className="font-bold text-white mb-4">LinkedIn</h3>
+            <a 
+              href="https://linkedin.com/in/elyse-randrianantenaina" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-6 py-2 bg-sky-500/20 hover:bg-sky-500 text-sky-400 hover:text-white text-xs font-bold rounded-xl border border-sky-500/30 transition-all"
+            >
+              Se connecter
+            </a>
+          </div>
+
           <div className="flex flex-col items-center p-8 bg-zinc-900/30 rounded-3xl border border-white/5 hover:bg-white/5 transition-colors">
             <MapPin className="text-zinc-400 mb-4" size={32}/>
             <span className="text-xs text-zinc-500 uppercase mb-2">Adresse</span>
