@@ -151,8 +151,9 @@ export default function Portfolio() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
-            { date: "2024 - 2025", title: "L3 en Informatique Générale", loc: "ENI Fianarantsoa", active: true },
-            { date: "2024 - 2025", title: "L2 en Informatique Générale", loc: "ENI Fianarantsoa", active: true },
+            { date: "2026", title: "L3 en Informatique Générale", loc: "ENI Fianarantsoa", active: true },
+            { date: "2025", title: "L2 en Informatique Générale", loc: "ENI Fianarantsoa", active: false },
+            { date: "2024", title: "L1 en Informatique Générale", loc: "ENI Fianarantsoa", active: false },
             { date: "2023", title: "Baccalauréat Scientifique", loc: "Lycée Saint Louis de Gonzague Mahasoabe", active: false },
           ].map((edu, i) => (
             <motion.div 
@@ -244,7 +245,7 @@ export default function Portfolio() {
                     </div>
                     <h3 className="text-2xl font-bold uppercase tracking-tight text-white">DevHunt 2025</h3>
                   </div>
-                  <span className="text-[10px] font-mono bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full uppercase">Concours</span>
+                  <span className="text-[10px] font-mono bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full uppercase">Compétition</span>
                 </div>
                 <p className="text-gray-400 text-sm leading-relaxed mb-8">Participation au concours national de développement d'application web à l'ENI. Travail intense en équipe sous pression.</p>
               </div>
