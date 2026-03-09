@@ -185,35 +185,47 @@ export default function Portfolio() {
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* --- STAGE ONG TSINJO AINA --- */}
-          <div className="md:col-span-3 group relative p-10 rounded-[3rem] bg-gradient-to-br from-emerald-500/10 via-transparent to-transparent border border-emerald-500/20 hover:border-emerald-500/50 transition-all shadow-2xl">
-            <div className="flex justify-between items-center mb-10">
-               <div className="flex items-center gap-6">
-                  <div className="p-4 bg-emerald-500/20 rounded-2xl text-emerald-400">
-                    <Target size={36} />
+            {/* --- STAGE ONG TSINJO AINA --- */}
+            <div className="md:col-span-3 group relative p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] bg-gradient-to-br from-emerald-500/10 via-transparent to-transparent border border-emerald-500/20 hover:border-emerald-500/50 transition-all shadow-2xl">
+              
+              {/* Lohateny sy Badge: Responsive Layout */}
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6 mb-10">
+                <div className="flex items-center gap-4 md:gap-6">
+                  <div className="p-3 md:p-4 bg-emerald-500/20 rounded-2xl text-emerald-400 shrink-0">
+                    <Target size={30} className="md:w-9 md:h-9" />
                   </div>
-                  <h3 className="text-2xl md:text-4xl font-black  tracking-tighter text-white">ONG TSINJO AINA Fianarantsoa </h3>
-               </div>
-               <span className="text-[10px] md:text-[11px] font-mono bg-sky-500/20 text-sky-400 px-3 py-1.5 md:px-4 md:py-2 rounded-full uppercase tracking-widest whitespace-nowrap">
-                Stage Professionnel L2
-              </span>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <p className="text-gray-400 text-base leading-relaxed">
-                Conception et réalisation d'une application web pour la gestion d'évaluation des données de l'ONG à Fianarantsoa. 
-                Architecture moderne séparant le <span className="text-white">Frontend (React)</span> et le <span className="text-white">Backend (Laravel)</span>.
-              </p>
-              <div className="flex flex-col gap-6 md:items-end justify-end">
-                <div className="flex flex-wrap gap-3">
-                  <span className="px-4 py-1.5 bg-zinc-900/80 text-emerald-400 text-[11px] font-black rounded-xl border border-emerald-500/30 uppercase">React JS</span>
-                  <span className="px-4 py-1.5 bg-zinc-900/80 text-orange-400 text-[11px] font-black rounded-xl border border-orange-500/30 uppercase">Laravel</span>
-                  <span className="px-4 py-1.5 bg-zinc-900/80 text-sky-400 text-[11px] font-black rounded-xl border border-sky-500/30 uppercase">PostgreSQL</span>
+                  <h3 className="text-xl md:text-4xl font-black tracking-tighter text-white leading-tight">
+                    ONG TSINJO AINA Fianarantsoa
+                  </h3>
                 </div>
-                <p className="text-[11px] text-zinc-500 italic font-medium tracking-tight">Encadré par Mr. Andoniaina Andrianjatovo.</p>
+
+                {/* Ity span ity izao dia hidina ho azy eo ambany amin'ny mobile fa tsy hivoaka sisiny */}
+                <div className="flex">
+                  <span className="text-[10px] md:text-[11px] font-mono bg-sky-500/20 text-sky-400 px-3 py-1.5 md:px-4 md:py-2 rounded-full uppercase tracking-widest whitespace-nowrap">
+                    Stage Professionnel L2
+                  </span>
+                </div>
               </div>
-            </div>
-          </div>
+              </div>
+
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+        Conception et réalisation d'une application web pour la gestion d'évaluation des données de l'ONG à Fianarantsoa. 
+        Architecture moderne séparant le <span className="text-white">Frontend (React)</span> et le <span className="text-white">Backend (Laravel)</span>.
+      </p>
+      <div className="flex flex-col gap-6 md:items-end justify-end">
+        <div className="flex flex-wrap gap-3">
+          <span className="px-4 py-1.5 bg-zinc-900/80 text-emerald-400 text-[10px] md:text-[11px] font-black rounded-xl border border-emerald-500/30 uppercase">React JS</span>
+          <span className="px-4 py-1.5 bg-zinc-900/80 text-orange-400 text-[10px] md:text-[11px] font-black rounded-xl border border-orange-500/30 uppercase">Laravel</span>
+          <span className="px-4 py-1.5 bg-zinc-900/80 text-sky-400 text-[10px] md:text-[11px] font-black rounded-xl border border-sky-500/30 uppercase">PostgreSQL</span>
+        </div>
+        <p className="text-[10px] md:text-[11px] text-zinc-500 italic font-medium tracking-tight">
+          Encadré par Mr. Andoniaina Andrianjatovo.
+        </p>
+      </div>
+    </div>
+
 
           {/* DevHunt */}
           <div className="md:col-span-2 group relative p-10 rounded-[3rem] bg-zinc-900/40 border border-white/5 hover:border-emerald-500/50 transition-all flex flex-col justify-between">
