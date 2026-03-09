@@ -375,7 +375,7 @@ export default function Portfolio() {
               </div>
               <span className="text-[10px] text-zinc-500 uppercase font-mono tracking-widest mb-1">LinkedIn</span>
               <a 
-                href="https://linkedin.com/in/elyse-randrianantenaina" 
+                href="https://linkedin.com/in/elhadari" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-sky-400 hover:text-white text-[11px] font-bold underline underline-offset-4 transition-all"
@@ -391,7 +391,7 @@ export default function Portfolio() {
               </div>
               <span className="text-[10px] text-zinc-500 uppercase font-mono tracking-widest mb-1">Twitter / X</span>
               <a 
-                href="https://twitter.com/izay_anaranao" 
+                href="https://twitter.com/Elhadari11" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white/60 hover:text-white text-[11px] font-bold underline underline-offset-4 transition-all"
