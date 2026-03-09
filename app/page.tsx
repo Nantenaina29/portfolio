@@ -192,7 +192,7 @@ export default function Portfolio() {
                   <div className="p-4 bg-emerald-500/20 rounded-2xl text-emerald-400">
                     <Target size={36} />
                   </div>
-                  <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-white">ONG TSINJO AINA FIANARANTSOA</h3>
+                  <h3 className="text-3xl md:text-4xl font-black  tracking-tighter text-white">ONG TSINJO AINA Fianarantsoa </h3>
                </div>
                <span className="hidden md:block text-[11px] font-mono bg-sky-500/20 text-sky-400 px-4 py-2 rounded-full uppercase tracking-widest">
                   Stage Professionnel L2
