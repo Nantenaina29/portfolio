@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { 
-  Mail, Phone, MapPin, Code2,Facebook, Linkedin, 
+  Mail, Phone, MapPin, Code2,Facebook, Linkedin,Twitter, 
   Database, Layout, Trophy, GraduationCap, 
   ChevronRight, Target, Cpu, Users, Clock, 
   Globe
@@ -337,57 +337,76 @@ export default function Portfolio() {
            <p className="text-zinc-500">Disponible pour des stages ou des projets freelances.</p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-          <div className="flex flex-col items-center p-8 bg-zinc-900/30 rounded-3xl border border-white/5 hover:bg-emerald-500/10 transition-colors">
-            <Mail className="text-emerald-500 mb-4" size={32}/>
-            <span className="text-xs text-zinc-500 uppercase mb-2">Email</span>
-            <p className="font-bold text-sm">elhadari04@gmail.com</p>
-          </div>
-          <div className="flex flex-col items-center p-8 bg-zinc-900/30 rounded-3xl border border-white/5 hover:bg-sky-500/10 transition-colors">
-            <Phone className="text-sky-500 mb-4" size={32}/>
-            <span className="text-xs text-zinc-500 uppercase mb-2">Téléphone</span>
-            <p className="font-bold text-sm">+261 38 44 218 15</p>
-          </div>
-
-          <div className="flex flex-col items-center p-8 bg-zinc-900/30 rounded-3xl border border-white/5 hover:border-blue-600/50 hover:bg-blue-600/5 transition-all group">
-            <div className="p-4 bg-blue-600/10 rounded-2xl text-blue-600 mb-4 group-hover:scale-110 transition-transform">
-              <Facebook size={32} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-12">
+            {/* --- EMAIL --- */}
+            <div className="flex flex-col items-center p-4 bg-zinc-900/30 rounded-2xl border border-white/5 hover:bg-emerald-500/10 transition-colors">
+              <Mail className="text-emerald-500 mb-2" size={24}/>
+              <span className="text-[10px] text-zinc-500 uppercase mb-1">Email</span>
+              <p className="font-bold text-[12px]">elhadari04@gmail.com</p>
             </div>
-            <span className="text-[10px] text-zinc-500 uppercase font-mono tracking-widest mb-2">Social Media</span>
-            <h3 className="font-bold text-white mb-4">Facebook</h3>
-            <a 
-              href="https://facebook.com/nantenaina.elyse" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="px-6 py-2 bg-blue-600/20 hover:bg-blue-600 text-blue-400 hover:text-white text-xs font-bold rounded-xl border border-blue-600/30 transition-all"
-            >
-              Voir le profil
-            </a>
-          </div>
 
-                  {/* --- DIV LINKEDIN --- */}
-          <div className="flex flex-col items-center p-8 bg-zinc-900/30 rounded-3xl border border-white/5 hover:border-sky-500/50 hover:bg-sky-500/5 transition-all group">
-            <div className="p-4 bg-sky-500/10 rounded-2xl text-sky-500 mb-4 group-hover:scale-110 transition-transform">
-              <Linkedin size={32} />
+            {/* --- TELEPHONE --- */}
+            <div className="flex flex-col items-center p-4 bg-zinc-900/30 rounded-2xl border border-white/5 hover:bg-sky-500/10 transition-colors">
+              <Phone className="text-sky-500 mb-2" size={24}/>
+              <span className="text-[10px] text-zinc-500 uppercase mb-1">Téléphone</span>
+              <p className="font-bold text-[12px]">+261 38 44 218 15</p>
             </div>
-            <span className="text-[10px] text-zinc-500 uppercase font-mono tracking-widest mb-2">Professional</span>
-            <h3 className="font-bold text-white mb-4">LinkedIn</h3>
-            <a 
-              href="https://linkedin.com/in/elyse-randrianantenaina" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="px-6 py-2 bg-sky-500/20 hover:bg-sky-500 text-sky-400 hover:text-white text-xs font-bold rounded-xl border border-sky-500/30 transition-all"
-            >
-              Se connecter
-            </a>
-          </div>
 
-          <div className="flex flex-col items-center p-8 bg-zinc-900/30 rounded-3xl border border-white/5 hover:bg-white/5 transition-colors">
-            <MapPin className="text-zinc-400 mb-4" size={32}/>
-            <span className="text-xs text-zinc-500 uppercase mb-2">Adresse</span>
-            <p className="font-bold text-sm text-center">Isada, Fianarantsoa</p>
+            {/* --- FACEBOOK --- */}
+            <div className="flex flex-col items-center p-4 bg-zinc-900/30 rounded-2xl border border-white/5 hover:border-blue-600/50 hover:bg-blue-600/5 transition-all group">
+              <div className="p-2 bg-blue-600/10 rounded-xl text-blue-600 mb-2 group-hover:scale-110 transition-transform">
+                <Facebook size={24} />
+              </div>
+              <span className="text-[10px] text-zinc-500 uppercase font-mono tracking-widest mb-1">Facebook</span>
+              <a 
+                href="https://www.facebook.com/profile.php?id=61580488934908" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-white text-[11px] font-bold underline underline-offset-4 transition-all"
+              >
+                Voir le profil
+              </a>
+            </div>
+
+            {/* --- LINKEDIN --- */}
+            <div className="flex flex-col items-center p-4 bg-zinc-900/30 rounded-2xl border border-white/5 hover:border-sky-500/50 hover:bg-sky-500/5 transition-all group">
+              <div className="p-2 bg-sky-500/10 rounded-xl text-sky-500 mb-2 group-hover:scale-110 transition-transform">
+                <Linkedin size={24} />
+              </div>
+              <span className="text-[10px] text-zinc-500 uppercase font-mono tracking-widest mb-1">LinkedIn</span>
+              <a 
+                href="https://linkedin.com/in/elyse-randrianantenaina" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sky-400 hover:text-white text-[11px] font-bold underline underline-offset-4 transition-all"
+              >
+                Se connecter
+              </a>
+            </div>
+
+            {/* --- TWITTER (X) --- */}
+            <div className="flex flex-col items-center p-4 bg-zinc-900/30 rounded-2xl border border-white/5 hover:border-white/20 hover:bg-white/5 transition-all group">
+              <div className="p-2 bg-white/10 rounded-xl text-white mb-2 group-hover:scale-110 transition-transform">
+                <Twitter size={24} />
+              </div>
+              <span className="text-[10px] text-zinc-500 uppercase font-mono tracking-widest mb-1">Twitter / X</span>
+              <a 
+                href="https://twitter.com/izay_anaranao" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white text-[11px] font-bold underline underline-offset-4 transition-all"
+              >
+                Suivre
+              </a>
+            </div>
+
+            {/* --- ADRESSE --- */}
+            <div className="flex flex-col items-center p-4 bg-zinc-900/30 rounded-2xl border border-white/5 hover:bg-white/5 transition-colors">
+              <MapPin className="text-zinc-400 mb-2" size={24}/>
+              <span className="text-[10px] text-zinc-500 uppercase mb-1">Adresse</span>
+              <p className="font-bold text-[12px] text-center">Isada, Fianarantsoa</p>
+            </div>
           </div>
-        </div>
       </footer>
     </div>
   );
