@@ -289,6 +289,17 @@ export default function Portfolio() {
               </div>
               <p className="text-gray-400 text-sm leading-relaxed mb-8">Application de gestion de parc automobile sous Java et PostgreSQL.</p>
             </div>
+
+                        {/* JIRAMA */}
+                        <div className="p-10 rounded-[3rem] bg-zinc-900/40 border border-white/5 hover:border-emerald-500/50 transition-all flex flex-col gap-6">
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-emerald-500/10 rounded-2xl text-emerald-400">
+                  <Code2 size={28}/>
+                </div>
+                <h3 className="text-xl font-bold text-white leading-tight">Site vitrine de l'ONG TSINJO AINA </h3>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-8">Architecture Backend Laravel/Postgresql optimisée pour la gestion d'évaluation des données.</p>
+            </div>
           </div>
         </section>
 
