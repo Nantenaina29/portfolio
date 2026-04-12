@@ -80,7 +80,7 @@ export default function Portfolio() {
               animate={{opacity:1, x:0}} 
               className="relative z-20 text-3xl sm:text-5xl md:text-7xl font-black tracking-tighter mb-4 leading-[0.95]"
             >
-              RANDRIANTENAINA <br /> 
+              RANDRIANANTENAINA <br /> 
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-teal-400 to-sky-500 uppercase">
                    Elysé
               </span>
